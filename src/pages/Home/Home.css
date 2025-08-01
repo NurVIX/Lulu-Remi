@@ -1,0 +1,35 @@
+.HeroSection{ 
+    height: 80vh;
+    padding-bottom: 200px;
+}
+
+.HeroLogo{
+    position: relative;
+    width: 25%;
+    left: 15%;
+    padding-top: 150px;
+}
+
+.HeroCTA{
+    font-family: 'Annie use your telescope', sans-serif;
+    position: relative;
+    left: 15%;
+    padding-top: 40px;
+    max-width: 70%;
+}
+
+.HeroButtonContainer{
+    position: relative;
+    padding : 60px 0 0 30%;
+    width: 100%;
+}
+.HeroDescriptionSection{
+    height: 80vh;
+}
+.HeroDescriptiontext{
+    font-family: 'Annie use your telescope', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+}
+

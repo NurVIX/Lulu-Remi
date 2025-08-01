@@ -11,6 +11,7 @@
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
   font-style: normal;
+  gap: 15%;
 }
 .IconsContainer{
     padding-right: 10%!important;
