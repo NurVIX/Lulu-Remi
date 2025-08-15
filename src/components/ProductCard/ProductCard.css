@@ -1,0 +1,12 @@
+.productCard {
+    border-radius: 40px;
+    width: 30%;
+    text-align: center;
+    padding: 5%;
+    transition: transform 0.3s ease;
+}
+
+.productImage{
+    max-width: 90%;
+}
+
