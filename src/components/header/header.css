@@ -5,7 +5,8 @@
 
 .NavbarContainer{
     padding-left: 5%!important;
-    background: white ;
+    background: #B99FEE;
+    height: 5vh;
 }
 .caveat-brush-regular {
   font-family: "Caveat Brush", cursive;

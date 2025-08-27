@@ -1,5 +1,9 @@
+.HomeContainer{
+    background-image: url("../../assets/Paper_texture.png");
+}
+
 .HeroSection{ 
-    background-image: url('../../assets/luluremi.jpg');
+    background-image: url('../../assets/luluremi.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -29,22 +33,22 @@
     width: 100%;
 }
 .HeroDescriptionSection{
-    height: 60vh;
+    height: 20vh;
 }
 .HeroDescriptiontext{
     font-family: 'Annie use your telescope', sans-serif;
     position: relative;
     text-align: center;
     font-size: 50px;
-    padding: 15% 0 20% 0;
 }
 
 .HeroDescriptionSectionthree{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 10% 0 0 0;
 
 }
 .HeroDescriptionSectionThreeText{
@@ -56,39 +60,91 @@
     
 }
 .SukkotCoverImage{
-    height: 80%;
-}
-.SukkotCoverImageSectionFour{
-    height: 60%;
+    height: 100%;
     width: 100%;
-
-    position: relative;
 }
+
 .HeroDescriptionSectionfour{
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.SukkotCoverImageSectionFour{
+    width: 70%;
+}
+.SukkotCoverImageFaceUp{
+    position: relative;
+    width: 100%;
+    left: -80px;
 }
 
-.bookCoverImagesSection{
-    display: flex;
-    flex-direction: column;
-}
 
 .howToImagesSection{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    height: 70%;
+    gap: 60px;
 }
+.Color_it{
+    position: relative;
+    left: -60px;
+    width: 30%;
+}
+
+.Peel_it{
+    position: relative;
+    left: 60px;
+    width: 30%;
+}
+.Play_it{
+    position: relative;
+    left: -60px;
+    width: 30%;
+}
+
 
 .how_to_images{
-    height: 30%;
-    padding: 10% 0 0 0;
+    width: 30%;
 }
 
+
+.HeroDescriptionSectionfive{
+    width: 100vw;
+    padding: 0 0 10% 0;
+}
+.HeroDescriptionSectionFiveText{
+    text-align: center;
+     font-family: 'Annie use your telescope', sans-serif;
+    font-weight: 500;
+    padding: 10% 0 10% 0;
+}
+
+.ProductGrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    gap: 10%;
+    margin: 0 auto;
+    
+}
+
+.HeroDescriptionSectionsix{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    }
+
+.TestimonialContainer{
+    margin: 10% 0 0 10%;
+}
 
 @media screen and (max-width: 600px) {
     .HeroDescriptionSectionthree{
@@ -96,5 +152,9 @@
         align-items: center;
         padding: 15% 0 0 0;
         
+    }
+    .HeroDescriptionSectionfour{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

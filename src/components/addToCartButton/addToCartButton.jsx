@@ -1,9 +1,9 @@
 import React from "react";
 import './addToCartButton.css';
-const AddToCartButton = () => {
+
+
+export default function AddToCartButton ({onClick}) {
     return(
-        <button className="addToCartButton">Add to Cart</button>
+        <button className="addToCartButton" onClick={onClick}>Add to Cart</button>
     );
 };
-
-export default AddToCartButton;
