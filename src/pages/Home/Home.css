@@ -33,35 +33,40 @@
     width: 100%;
 }
 .HeroDescriptionSection{
-    height: 20vh;
+    padding: 10% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .HeroDescriptiontext{
     font-family: 'Annie use your telescope', sans-serif;
-    position: relative;
     text-align: center;
     font-size: 50px;
+    height: 20vh;
+    font-weight: 800;
 }
 
 .HeroDescriptionSectionthree{
-    height: 100vh;
+    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10% 0 0 0;
-
 }
+
 .HeroDescriptionSectionThreeText{
     text-align: left;
     padding: 0 0 0 10%;
-     font-family: 'Annie use your telescope', sans-serif;
-    font-weight: 500;
-    font-size: 50px;
+    font-family: 'Annie use your telescope', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    width: 50%;
+    
     
 }
 .SukkotCoverImage{
-    height: 100%;
-    width: 100%;
+    height: 70%;
 }
 
 .HeroDescriptionSectionfour{
@@ -73,12 +78,13 @@
     width: 100%;
 }
 .SukkotCoverImageSectionFour{
-    width: 70%;
+    width: fit-content;
 }
 .SukkotCoverImageFaceUp{
     position: relative;
-    width: 100%;
-    left: -80px;
+    width: 80%;
+    left: -40px;
+    
 }
 
 
@@ -88,7 +94,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
     gap: 60px;
 }
 .Color_it{
@@ -156,5 +161,10 @@
     .HeroDescriptionSectionfour{
         display: flex;
         flex-direction: column-reverse;
+    }
+    .SukkotCoverImageFaceUp{
+        position: relative;
+        left: 40px;
+        padding: 20% 0 0 0;
     }
 }

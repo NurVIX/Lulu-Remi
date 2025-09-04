@@ -12,19 +12,21 @@ export const products =[
     ]; 
 
 const ProductCard = ({ product, onAddtoCart, onSeeDetails  }) => {
-    const {Image, Title, Price} = product;
+    const {Image, Title, Price, bgColor} = product;
     
     return (
-        <div className="productCardcontainer">
-            <img src={Image} alt={Title} className="productImage" />
-            <h3>{Title}</h3>
-            <p>${Price}</p>
-            <div className="CardButtonAction">
-                {onAddtoCart && (<AddToCartButton onClick={() => onAddtoCart?.(product)}/>)}
-                {onSeeDetails && (<SeeDetailButton onClick={() => onSeeDetails?.(product)}/>)}                   
-                
-            </div>
-        </div>
+    <div
+      className="productCardcontainer"
+      style={{ '--card': bgColor || '#f3f3f3' }}
+    >
+      <img src={Image} alt={Title} className="productImage" />
+      <h3 className="productTitle">{Title}</h3>
+      <p className="productPrice">${Number(Price).toFixed(2)}</p>
+      <div className="CardButtonAction">
+        {onAddtoCart && <AddToCartButton onClick={() => onAddtoCart(product)} />}
+        {onSeeDetails && <SeeDetailButton onClick={() => onSeeDetails(product)} />}
+      </div>
+    </div>
     );
 };
 

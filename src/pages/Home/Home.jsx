@@ -1,10 +1,15 @@
-import React, {useState, useEffect, use} from "react";
+import {React,useState, useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 import BuyButton from "../../components/buyButton/BuyButton.jsx";
 import ProductDisplayCarousel from "../../components/ProductCarousel/productCarousel.jsx";
 import BrandPillars from "../../components/BrandPillars/BrandPillars.jsx";
 import ProductCard, {products} from "../../components/ProductCard/ProductCard.jsx";
 import "./Home.css"; 
 import TestimonialCard, {Testimonials} from "../../components/Testimonials/testimonials.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 
 import luluRemiBlack from "../../assets/luluRemiBlack.PNG";   
@@ -23,6 +28,10 @@ const handleSeeDetails = (p) => console.log("see Details:", products);
 
 const Home = () => {
 
+    useEffect(() => {
+    AOS.init({duration:1000, once: true});
+    }, []);
+
     const[s, setS] = useState(0);
     useEffect(() => {
         const id = setInterval(() => setS((n) => (n + 1) % Testimonials.length), 3000);
@@ -31,20 +40,20 @@ const Home = () => {
     return (
         <div className="HomeContainer">
             <section className="HeroSection">
-                <img src={luluRemiBlack} alt="Home Banner" className="HeroLogo" /> 
-                <h1 className="HeroCTA">Where every page turns into a world of sticker fun!</h1>
+                <img src={luluRemiBlack} alt="Home Banner" data-aos="fade-right" className="HeroLogo" /> 
+                <h1 className="HeroCTA" data-aos="fade">Where every page turns into a world of sticker fun!</h1>
                 <div className="HeroButtonContainer">
                     <BuyButton/> 
                 </div>
             </section>
             <section className="HeroDescriptionSection">
-                <h2 className="HeroDescriptiontext">Color it, peel it, stick it! <br></br>Creativity that sticks with you!</h2>   
-                <ProductDisplayCarousel/> 
+                <h2 className="HeroDescriptiontext" data-aos="fade">Color it, peel it, stick it! <br></br>Creativity that sticks with you!</h2>   
+                    <ProductDisplayCarousel/>
             </section>
-            <section  className="HeroDescriptionSectionthree">
-                <h2 className="HeroDescriptionSectionThreeText">It’s more than a coloring book,
+            <section  className="HeroDescriptionSectionthree" data-aos="fade">
+                <h2 className="HeroDescriptionSectionThreeText" data-aos="fade-right">It’s more than a coloring book,
                 it sticks with you.</h2>
-                <img src={CoverSukkot} alt="Sukkot Cover" className="SukkotCoverImage" />
+                <img src={CoverSukkot} alt="Sukkot Cover" data-aos="fade-left" className="SukkotCoverImage" />
             </section>
             <section className="HeroDescriptionSectionfour">
                 <div className="SukkotCoverImageSectionFour"> 
@@ -61,8 +70,8 @@ const Home = () => {
             <BrandPillars/>
             <section className="HeroDescriptionSectionfive">
                 <div className="HeroDescriptionSectionFiveText">
-                    <h1>Coloring books with Lulu&Remi</h1>
-                    <h3>Shop our favorite coloring books!</h3>
+                    <h1 className="TestimonialText">Coloring books with Lulu&Remi</h1>
+                    <h3 className="TestimonialText">Shop our favorite coloring books!</h3>
                 </div>
                 <div className="ProductGrid">
                         {products.map((p) =>(
@@ -72,9 +81,8 @@ const Home = () => {
                 ))}
                 </div>
             </section>
-            <section className="">
-                <TestimonialCard Testimonials={Testimonials[s]}/>
-            </section>
+            <TestimonialCard Testimonials={Testimonials[s]}/>
+            <Footer/>
         </div>      
         
     );

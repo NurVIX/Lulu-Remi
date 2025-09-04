@@ -1,4 +1,6 @@
 import React from "react";
+import "./tertimonials.css";
+
 import kid_holding_crayons from "../../assets/kid_holding_crayons.png";
 
 export const Testimonials =[
@@ -12,13 +14,13 @@ const TestimonialCard = ({Testimonials}) => {
     const {Message = "", Name = ""} = Testimonials;
     
     return(
-        <div className="HeroDescriptionSectionsix">
-            <div className="TestimonialContainer">
-                <h3>TESTIMONIALS</h3>
-                <p>{Message}</p>
-                <p>{Name}</p>
-            </div>
-            <img src={kid_holding_crayons} alt="Bou Crayons" className="TestimonialImage" />
+        <div className="TestimonialsSection">
+                <div className="TestimonialContainer">
+                    <h2 className="TestimonialText">TESTIMONIALS</h2>
+                    <p className="paragraphTestimonialText">{Message}</p>
+                    <p className="paragraphTestimonialText">{Name}</p>
+                </div>
+                <img src={kid_holding_crayons} alt="Bou Crayons" className="TestimonialImage" />
         </div>)
 
 };
