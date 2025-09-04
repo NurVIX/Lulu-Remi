@@ -1,12 +1,11 @@
-.NavbarFont{
-    font-size: 35px !important;
-    font-style: normal;
-}
-
 .NavbarContainer{
     padding-left: 5%!important;
     background: #B99FEE;
-    height: 5vh;
+    height: 9vh;
+}
+.NavbarFont{
+    font-size: 35px !important;
+    font-style: normal;
 }
 .caveat-brush-regular {
   font-family: "Caveat Brush", cursive;
@@ -20,4 +19,12 @@
 .NavIcon{   
     color: black;
     font-size: 35px;
+}
+
+.NavbarLogoContainer{
+    width: 150px;
+}
+.NavbarLogo{
+    height: 100px;
+    width: 100px;
 }

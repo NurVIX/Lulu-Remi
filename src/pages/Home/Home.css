@@ -57,7 +57,7 @@
 
 .HeroDescriptionSectionThreeText{
     text-align: left;
-    padding: 0 0 0 10%;
+    padding: 0 7% 0 10%;
     font-family: 'Annie use your telescope', sans-serif;
     font-weight: 800;
     font-size: 60px;
@@ -66,7 +66,8 @@
     
 }
 .SukkotCoverImage{
-    height: 70%;
+    width: 50%;
+    padding: 0 5% 0 0;
 }
 
 .HeroDescriptionSectionfour{

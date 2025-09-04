@@ -1,14 +1,20 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import './header.css'; 
+import './Navbar.css'; 
+import { Link } from 'react-router-dom';
+
+import Logo from "../../assets/Logo.png";
 
 function TextLinkExample() {
   return (
     <Navbar className="NavbarContainer ">
       <Container fluid>
+        <Navbar.Brand as={Link} to="/" className="NavbarLogoContainer" >
+        <img src={Logo} alt="Lulu Remi Logo" className="NavbarLogo"/>
+        </Navbar.Brand>
         <Navbar className='caveat-brush-regular' >
-          <Navbar.Brand className = "NavbarFont" href="#home">Contact</Navbar.Brand>
+          <Navbar.Brand className ="NavbarFont" as={Link} to="/contact">Contact</Navbar.Brand>
           <Navbar.Brand className = "NavbarFont" href="#home">About</Navbar.Brand>
         </Navbar>
         <Navbar.Toggle />

@@ -1,49 +1,45 @@
 import React from 'react';
+import Navbar from "../../components/Navbar/Navbar.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import "./ContactPage.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import luluRemiBlack from "../../assets/luluRemiBlack.PNG";   
+
 const ContactPage = () => {
   return (
-    <form className="container my-4">
-      <div className="form-group">
-        <label htmlFor="email">Email address</label>
-        <input
-          type="email"
-          className="form-control"
-          id="email"
-          aria-describedby="emailHelp"
-          placeholder="Enter email"
-        />
-        <small id="emailHelp" className="form-text text-muted">
-          We'll never share your email with anyone else.
-        </small>
+    <>
+    <Navbar/>
+    <section className="ContactPageContainer">
+      <div className='ContatoTextContainer'>
+        <img src={luluRemiBlack} alt="Home Banner" data-aos="fade-right" className="LogoContactPage" /> 
+        <h1 className="ContactPageCTA" data-aos="fade">Let's talk!</h1>
+        <p className='ContanctPageText'>We’d love to hear from you! Whether it’s a question, an idea, or just to say hello. <br></br>Let’s grow this community together!</p>
       </div>
-
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          className="form-control"
-          id="password"
-          placeholder="Password"
-        />
-      </div>
-
-      <div className="form-group form-check">
-        <input
-          type="checkbox"
-          className="form-check-input"
-          id="exampleCheck1"
-        />
-        <label className="form-check-label" htmlFor="exampleCheck1">
-          Check me out
-        </label>
-      </div>
-
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
-    </form>
+      <form className="container my-4 ContactForm">
+        <div className="form-group">
+          <label htmlFor="email">Name</label>
+          <input type="Name" className="form-control InputContainer" id="Name" aria-describedby="emailHelp"/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email address</label>
+          <input type="email" className="form-control InputContainer" id="email" aria-describedby="emailHelp"/>
+        </div>
+         <div className="form-group">
+          <label htmlFor="Subject">Subject</label>
+          <input type="email" className="form-control InputContainer" id="email" aria-describedby="emailHelp" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control InputContainer" id="exampleFormControlTextarea1" rows="3"></textarea>
+         </div>
+        <div className='ButtonContainer'>   
+          <button type="submit" className="btn btn-primary SendButton ">Send!</button>
+        </div>
+      </form>
+    </section>
+    <Footer/>
+    </>
   );
 };
 
