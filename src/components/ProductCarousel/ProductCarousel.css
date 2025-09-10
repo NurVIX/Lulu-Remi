@@ -1,0 +1,20 @@
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.card {
+  flex: 0 0 auto;
+  border-radius: 40px;
+  padding: 1rem;
+  text-align: center;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: #111;
+}
+
+.card img {
+  width: 100%;
+}

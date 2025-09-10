@@ -1,0 +1,22 @@
+.productCard {
+    border-radius: 40px;
+    text-align: center;
+    padding: 5%;
+    transition: transform 0.3s ease;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.productImage{
+    max-width: 90%;
+}
+
+.CardButtonAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

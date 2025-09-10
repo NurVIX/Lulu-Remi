@@ -1,0 +1,40 @@
+.TestimonialsSection{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    }
+
+.TestimonialContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 5%;
+}
+
+.TestimonialText{
+     font-family: 'Annie use your telescope', sans-serif;
+     font-weight: 800;
+     font-size: 45px;
+}
+.paragraphTestimonialText{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .TestimonialsSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .TestimonialText{
+        text-align: center;
+        width: 80%;
+    }
+    .TestimonialImage{
+        width: 100%;
+    }
+}
