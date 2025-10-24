@@ -51,7 +51,7 @@ export default function HomePage() {
         <h1 className={styles.HeroCTA} data-aos="fade">
           Where every page turns into a world of sticker fun!
         </h1>
-        <div className={styles.HeroButtonContainer} data-aos="flash">
+        <div className={styles.HeroButtonContainer} data-aos="fade-in">
           <BuyButton onClick={scrollToProducts} />
         </div>
       </section>
@@ -62,14 +62,14 @@ export default function HomePage() {
         <Image
           src="/images/CoverSukkot.png"
           alt="Sukkot Cover"
-          data-aos="fade-left"
+          data-aos="fade-right"
           className={styles.SukkotCoverImage}
           width={500}
           height={600}
         />
         <h2
           className={styles.HeroDescriptionSectionThreeText}
-          data-aos="fade-right">
+          data-aos="fade-left">
             It’s more than a coloring book, 
             <br></br>
             it sticks with you!
@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* Carousel Section */}
       <section className={styles.HeroDescriptionSection} data-aos="fade">
-        <h2 className={styles.HeroDescriptiontext}>
+        <h2 className={styles.HeroDescriptiontext} data-aos="fade">
           Color it, peel it, stick it! <br /> Creativity that sticks with you!
         </h2>
         <div className={styles.CarouselBackground}>
@@ -94,7 +94,7 @@ export default function HomePage() {
             src="/images/Color_it.png"
             alt="Color it"
             className={styles.Color_it}
-            data-aos="zoom-in-left"
+            data-aos="zoom-in"
             width={200}
             height={200}
           />
@@ -102,7 +102,7 @@ export default function HomePage() {
             src="/images/Peel_it.png"
             alt="Peel it"
             className={styles.Peel_it}
-            data-aos="zoom-in-left"
+            data-aos="zoom-in"
             width={200}
             height={200}
           />
@@ -110,24 +110,27 @@ export default function HomePage() {
             src="/images/Play_it.png"
             alt="Play it"
             className={styles.Play_it}
-            data-aos="zoom-in-left"
+            data-aos="zoom-in"
             width={200}
             height={200}
           />
-          <BuyButton onClick={scrollToProducts}/>
+          <div  data-aos="zoom-in">
+            <BuyButton onClick={scrollToProducts} />
+          </div>
+          
         </div>
         <div className={styles.SukkotCoverImageSectionFour}>
           <Image
             src="/images/CoverSukkotfaceup.png"
             alt="Sukkot Cover Face Up"
-            data-aos="zoom-in-right"
+            data-aos="zoom-in"
             className={styles.SukkotCoverImageFaceUp}
             width={500}
             height={500}/>
           <Image
             src="/images/CoverSukkotfaceup2.png"
             alt="Sukkot Cover Face Up 2"
-            data-aos="zoom-in-right"
+            data-aos="zoom-in"
             className={styles.SukkotCoverImageFaceUp}
             width={500}
             height={500}/>
@@ -139,9 +142,9 @@ export default function HomePage() {
       </section>
       {/* Products Section */}
       <section className={styles.HeroDescriptionSectionfive}>
-        <div className={styles.HeroDescriptionSectionFiveText} data-aos="fade">
-          <h1 className={styles.CTASectionFive}>Bring stories to life with Lulu & Remi’s coloring books!</h1>
-          <h2 className={styles.CTASectionFive}>
+        <div className={styles.HeroDescriptionSectionFiveText} >
+          <h1 className={styles.CTASectionFive} data-aos="fade">Bring stories to life with Lulu & Remi’s coloring books!</h1>
+          <h2 className={styles.CTASectionFive} data-aos="fade">
             Check out our collections:
           </h2>
         </div>

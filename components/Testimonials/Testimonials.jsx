@@ -28,9 +28,9 @@ export default function TestimonialCard({ testimonial }) {
   return (
     <div className={styles.TestimonialsSection}>
       <div className={styles.TestimonialContainer}>
-        <h2 className={styles.TestimonialText}>TESTIMONIALS</h2>
-          <p className={styles.paragraphTestimonialText}>{Message}</p>
-          <p className={styles.paragraphTestimonialText}>{Name}</p>
+        <h2 className={styles.TestimonialText} data-aos="fade-in">TESTIMONIALS</h2>
+          <p className={styles.paragraphTestimonialText} data-aos="fade-in">{Message}</p>
+          <p className={styles.paragraphTestimonialName} data-aos="fade-in">{Name}</p>
       </div>
       <Image
         src="/images/kid_holding_crayons.png"
@@ -38,6 +38,7 @@ export default function TestimonialCard({ testimonial }) {
         className={styles.TestimonialImage}
         width={400}
         height={400}
+        data-aos="slide-up"
       />
     </div>
   );

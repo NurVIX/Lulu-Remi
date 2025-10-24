@@ -16,7 +16,7 @@
   
   .Pillar_Item {
     flex: 0 0 300px;
-    height: 40vh;
+    height: 45vh;
     margin: 0 20px;
     border-radius: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -38,7 +38,7 @@
   .Pillar_Icon_Text {
     font-family: "Annie use your telescope", sans-serif;
     font-size: 20px;
-    max-width: 80%;
+    width: 80%;
   }
   
   @keyframes scrollLeft {

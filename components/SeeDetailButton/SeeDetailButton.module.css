@@ -11,3 +11,6 @@
     border-color:  #fd9d20;
     
 }
+.seeDetailButton:hover{
+    background-color: #f7aa45;
+}
