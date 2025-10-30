@@ -91,8 +91,8 @@ export default function ProductCarousel() {
   } else if (products.length >= 3) {
     visibleCards = [
       { product: products[0], color: bgColors[0], size: cardSizes[0] },
-      { product: products[1], color: bgColors[1], size: cardSizes[1] },
-      { product: products[2], color: bgColors[2], size: cardSizes[2] },
+      { product: products[2], color: bgColors[1], size: cardSizes[1] },
+      { product: products[1], color: bgColors[2], size: cardSizes[2] },
     ];
   }
 

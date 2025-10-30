@@ -5,11 +5,11 @@ export async function POST(req) {
   try {
     const { email } = await req.json();
 
-    const response = await fetch(`https://${process.env.SHOPIFY_STORE_DOMAIN}/admin/api/2024-01/customers.json`, {
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN}/admin/api/2024-01/customers.json`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_API_KEY,
+        "X-Shopify-Access-Token": process.env.NEXT_PUBLIC_SHOPIFY_API_ACCESS_TOKEN,
       },
       body: JSON.stringify({
         customer: {

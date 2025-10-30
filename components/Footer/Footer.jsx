@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className={styles.FooterContainer}>
       <div className={styles.SubscribeSection}>
-        <h3>Subscribe to Lulu&Remi's newsletter and unlock 10% off!</h3>
+        <h3>Join Lulu&Remi’s newsletter! <br></br>Be first to know about new drops & deals.</h3>
         <input type="email" className={styles.NewsletterInput} />
         <button onClick={handleSubscribe} className={styles.SubscribeButton}>Subscribe</button>
         <p className={styles.TermsText}>
@@ -39,9 +39,6 @@ export default function Footer() {
           </Link>
           <Link href="/Contact" className={styles.TermsText}>
             Contact Us
-          </Link>
-          <Link href="/Product" className={styles.TermsText}>
-            FAQ
           </Link>
         </div>
         <div className={styles.SocialContent}>

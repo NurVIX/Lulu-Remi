@@ -48,10 +48,10 @@ export default function HomePage() {
           width={300}
           height={400}
         />
-        <h1 className={styles.HeroCTA} data-aos="fade">
-          Where every page turns into a world of sticker fun!
+        <h1 className={styles.HeroCTA} >
+          Where every page turns into a world of sticker!
         </h1>
-        <div className={styles.HeroButtonContainer} data-aos="fade-in">
+        <div className={styles.HeroButtonContainer}>
           <BuyButton onClick={scrollToProducts} />
         </div>
       </section>
