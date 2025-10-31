@@ -6,7 +6,8 @@
   align-items: center;
   background: #B99FEE;
   height: 9vh;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 999;
   box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.15);
@@ -27,14 +28,14 @@
 .LeftLinks {
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
-  font-size: 28px; /* slightly smaller for better fit */
+  font-size: 30px; 
   color: #fff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .LeftLinks:hover {
-  color: #3b2063; /* darker purple on hover */
+  color: #3b2063; 
 }
 
 /* Cart icon */
@@ -58,7 +59,6 @@
   color: #3b2063;
 }
 
-/* Hamburger button (hidden by default) */
 .Hamburger {
   display: none;
   font-size: 2rem;
@@ -67,6 +67,9 @@
   color: #fff;
   cursor: pointer;
 }
+
+
+
 
 /* ========== Responsive ========== */
 @media (max-width: 400px) {

@@ -54,7 +54,7 @@ export default function AboutPage() {
         />
       </div>
       <div className={styles.ContactUsButtonContainer}>
-        <Link href="/Contact">
+        <Link href="/contact?form=contact">
           <ContactUsButton />
         </Link>
       </div>

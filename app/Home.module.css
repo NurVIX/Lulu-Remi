@@ -1,5 +1,6 @@
 .HomeContainer{
     background-image: url("/images/Paper_texture.png");
+    margin: 9vh 0 0;
 }
 
 .HeroSection{ 
@@ -166,7 +167,12 @@
     display: flex;
     flex-direction: row;
     }
-
+.WholesalesButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 20vh;
+}
 .TestimonialContainer{
     margin: 10% 0 0 10%;
 }

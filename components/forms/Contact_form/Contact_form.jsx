@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import styles from "./ContactPage.module.css";
+import styles from "./Contact_form.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-export default function ContactPage() {
+export default function ContactForm() {
 
   async function handleSubmit(event) {
     event.preventDefault();

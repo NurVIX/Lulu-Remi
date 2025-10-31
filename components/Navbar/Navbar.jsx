@@ -5,8 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 
-export default function AppNavbar({onCartClick}) {
+export default function AppNavbar({ onCartClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <nav className={styles.NavbarContainer}>
@@ -23,7 +24,7 @@ export default function AppNavbar({onCartClick}) {
         </Link>
       </div>
 
-      {/* Hamburger toggle (only shows on small screens) */}
+      {/* Hamburger toggle (for mobile) */}
       <button
         className={styles.Hamburger}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -37,7 +38,10 @@ export default function AppNavbar({onCartClick}) {
           menuOpen ? styles.ShowMenu : ""
         }`}
       >
-        <Link href="/Contact" className={styles.LeftLinks}>
+        <div href="/" className={styles.LeftLinks}>
+          SHOP !
+        </div>
+        <Link href="/contact?form=contact" className={styles.LeftLinks}>
           Contact
         </Link>
         <Link href="/About" className={styles.LeftLinks}>
@@ -47,7 +51,7 @@ export default function AppNavbar({onCartClick}) {
 
       {/* Cart */}
       <div className={styles.NavIcons}>
-        <button href="/cart" className={styles.NavIcon} onClick={onCartClick}>
+        <button className={styles.NavIcon} onClick={onCartClick}>
           🛒
         </button>
       </div>

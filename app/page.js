@@ -11,7 +11,9 @@ import ProductGrid from "./../components/ProductGrid/ProductGrid.jsx";
 import BuyButton from "../components/buyButton/BuyButton.jsx";
 import ProductDisplayCarousel from "../components/ProductCarousel/ProductCarousel.jsx";
 import BrandPillars from "../components/BrandPillars/BrandPillars.jsx";
+import WholesalesButton from "../components/Wholesales_button/Wholesales_button.jsx";
 import TestimonialCard, { testimonials } from "../components/Testimonials/Testimonials.jsx";
+import Link from "next/link";
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
@@ -81,7 +83,7 @@ export default function HomePage() {
         <h2 className={styles.HeroDescriptiontext} data-aos="fade">
           Color it, peel it, stick it! <br /> Creativity that sticks with you!
         </h2>
-        <div className={styles.CarouselBackground}>
+        <div className={styles.CarouselBackground} id="products">
           <ProductDisplayCarousel />
         </div>
       </section>
@@ -150,7 +152,12 @@ export default function HomePage() {
         </div>
         {/* product Grid display */}
         <div ref={productRef} className={styles.ProductGridContainer} data-aos="zoomIn">
-          <ProductGrid /> 
+          <ProductGrid />
+        </div>
+        <div className={styles.WholesalesButtonContainer}>
+          <Link  href="/contact?form=wholesale">
+            <WholesalesButton />
+          </Link>
         </div>
       </section>
       {/* Testimonials */}
