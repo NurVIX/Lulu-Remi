@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import ContactForm from "@/components/forms/Contact_form/Contact_form";
-import WholesalesForm from "@/components/forms/Wholesales_Form/WholesalesForm";
+import ContactForm from "@/components/forms/Contact_form";
+import WholesalesForm from "@/components/forms/WholesalesForm";
 
 export default function ContactClient() {
   const params = useSearchParams();

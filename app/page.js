@@ -83,7 +83,7 @@ export default function HomePage() {
         <h2 className={styles.HeroDescriptiontext} data-aos="fade">
           Color it, peel it, stick it! <br /> Creativity that sticks with you!
         </h2>
-        <div className={styles.CarouselBackground} id="products">
+        <div className={styles.CarouselBackground} id="shop">
           <ProductDisplayCarousel />
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function HomePage() {
         </div>
       </section >
        {/* Brand Pillars */}
-      <section  className={styles.BrandpillarSection}> 
+      <section  className={styles.BrandpillarSection} > 
         <BrandPillars  />
       </section>
       {/* Products Section */}

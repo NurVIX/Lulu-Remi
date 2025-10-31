@@ -1,13 +1,28 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 export default function AppNavbar({ onCartClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleShopClick = () => {
+    setMenuOpen(false);
+
+    // If already on homepage, just scroll
+    if (pathname === "/") {
+      const section = document.getElementById("shop");
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate to homepage with a hash
+      router.push("/#shop");
+    }
+  };
 
   return (
     <nav className={styles.NavbarContainer}>
@@ -38,7 +53,7 @@ export default function AppNavbar({ onCartClick }) {
           menuOpen ? styles.ShowMenu : ""
         }`}
       >
-        <div href="/" className={styles.LeftLinks}>
+        <div onClick={handleShopClick} className={styles.LeftLinks}>
           SHOP !
         </div>
         <Link href="/contact?form=contact" className={styles.LeftLinks}>

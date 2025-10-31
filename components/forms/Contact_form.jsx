@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./Contact_form.module.css";
+import styles from "./Forms.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
