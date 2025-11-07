@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 export default function Footer() {
 
@@ -45,7 +47,7 @@ export default function Footer() {
           <a href="https://www.instagram.com/lulunremi/" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=61582515611200" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-facebook"></i>
           </a>
         </div>
